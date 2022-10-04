@@ -1,7 +1,14 @@
+body{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    height: 100vh;
+}
 div{
     height: 0;
     width: 0;
-    border-width: 50px 50px;
+    border-width: 100px 100px;
     border-style: solid;
-    border-left-color: transparent;
+    border-color: transparent;
+    border-top-color: olive;
 }

@@ -12,7 +12,7 @@ I have compiled a list of some cool stuff using css and the list goes below:
 - Pseudo Elements
 - Spinner
 - Triangle
-- Typing Effect (it's still work in progress)
+- Typing Effect (it's working, but there is width issue work in progress)
 
 
 I will keep adding more stuff stay tuned for cooler stuff. :smiley:	 
