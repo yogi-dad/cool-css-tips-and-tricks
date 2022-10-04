@@ -1,0 +1,40 @@
+div{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+span{
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: bounce 2s infinite ease;
+    transform-origin: bottom;
+}
+.ball-1{
+    animation-delay: 0s;
+}
+.ball-2{
+    animation-delay: .5s;
+}
+.ball-3{
+    animation-delay: 1s;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+        opacity: .4;
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0);
+        opacity: .4;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}

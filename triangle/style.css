@@ -1,0 +1,7 @@
+div{
+    height: 0;
+    width: 0;
+    border-width: 50px 50px;
+    border-style: solid;
+    border-left-color: transparent;
+}

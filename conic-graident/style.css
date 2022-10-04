@@ -1,0 +1,28 @@
+@property --red {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+@property --green {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+@property --blue {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(red var(--red,0%),black 0);
+    border-radius: 100%;
+    animation: pie-chart .4s infinite linear alternate;
+}
+
+@keyframes pie-chart {
+    to{
+        --red: 100%;
+    }
+}

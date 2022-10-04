@@ -1,0 +1,17 @@
+@keyframes ants {
+    to{
+        stroke-dashoffset: -94px;
+    }
+}
+div{
+    background: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+    <style>@keyframes ants {\
+    to{\
+    stroke-dashoffset: -15px;\
+    }\
+    }</style>\
+    <rect style="fill: none;stroke: red;stroke-dasharray: 10px 5px;animation: ants .4s infinite linear"  height="100%" width="100%" />\
+    </svg>') no-repeat;
+    //background: url("https://en.wikipedia.org/wiki/File:SVG_Logo.svg");
+}

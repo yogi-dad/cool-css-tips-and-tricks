@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.typewritter {
+    position: relative;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    --elementSize: 0;
+    --typrewritterSpeed: 6s;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.typewritter:before, .typewritter:after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+}
+
+.typewritter:before {
+    animation: typing var(--typrewritterSpeed) steps(var(--elementSize)) forwards .1s infinite;
+    background: white;
+}
+
+.typewritter:after {
+    width: 0.125rem;
+    background: black;
+    animation: typing var(--typrewritterSpeed) steps(var(--elementSize)) forwards infinite,
+    blink var(--typrewritterSpeed) steps(var(--elementSize)) forwards infinite;
+}
+
+@keyframes typing {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+.typewritter-1 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+li {
+    position: relative;
+}
+
+li:after {
+    content: "";
+    animation: typing 3s steps(var(--elementSize)) forwards .1s infinite;
+    background: white;
+}

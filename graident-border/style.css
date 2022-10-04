@@ -1,0 +1,11 @@
+div{
+    width: max-content;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3ClinearGradient gradientTransform='rotate(40)' id='grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop stop-color='gold' /%3E%3Cstop stop-color='olive' offset='1' /%3E%3C/linearGradient%3E%3Crect height='100%25' width='100%25' style='fill: none;stroke: url(%23grad);stroke-width: 10px'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+}
+@keyframes animated-border {
+    
+}
