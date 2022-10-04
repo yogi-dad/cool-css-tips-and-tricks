@@ -9,7 +9,6 @@ I have compiled a list of some cool stuff using css and the list goes below:
 - Grid View
 - Image Inside Text
 - Logical Props
-- Pseudo Elements
 - Spinner
 - Triangle
 - Typing Effect (it's working, but there is width issue work in progress)
