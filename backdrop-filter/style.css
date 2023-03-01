@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+::root {
+    --filter: blur(10px);
+    --background-color: rgba(255, 255, 255, 0.4);
+    --gap: 15px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+
+}
+
+* {
+    --filter: contrast(1);
+    margin: 0;
+
+    padding: 0;
+}
+
+.grid {
+    --gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: var(--gap);
+}
+
+.background {
+    --gap: 5px;
+    justify-content: space-evenly;
+}
+
+.background img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.background > div {
+    width: 100%;
+    z-index: 2;
+    grid-row-start: var(--row-start);
+    grid-column-start: var(--column-start);
+    background-color: rgba(var(--background-color));
+    backdrop-filter: var(--filter);
+    -webkit-backdrop-filter: var(--filter);
+}
+
+.card {
+    display: grid;
+    align-items: center;
+}
+
+.card .top {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    height: 50px;
+    position: relative;
+    font-size: 2rem;
+}
+
+.grid.backdrop .card .top {
+    background-color: var(--background-color);
+    -webkit-backdrop-filter: var(--filter);
+    backdrop-filter: var(--filter);
+}
+
+.grid.filter .card .top {
+    background-color: var(--background-color);
+    filter: var(--filter);
+    -webkit-filter: var(--filter);
+}
+
+.card.blur .top {
+    --filter: blur(5px);
+    --background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card.brightness .top {
+
+    --filter: brightness(.7);
+    --background-color: rgba(255, 255, 150, 0.4);
+}
+
+.card.hue .top {
+    --filter: hue-rotate(160deg);
+    color: #fff;
+    --background-color: rgba(100, 150, 255, 0.4);
+}
+
+.card.contrast .top {
+    --filter: contrast(.5);
+    color: #fff;
+    --background-color: rgba(100, 150, 255, 0.4);
+}
+
+.card.invert .top {
+    --filter: invert(1);
+    color: #fff;
+    --background-color: rgba(100, 150, 255, 0.4);
+}
+
+.card img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}

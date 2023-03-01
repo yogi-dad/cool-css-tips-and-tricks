@@ -15,6 +15,9 @@ I have compiled a list of some cool stuff using css and the list goes below:
 - Spinner
 - Triangle
 - Typing Effect (it's working, but there is width issue work in progress)
+- Smile
+- Infinity Symbol
+- Yin And Yang
 
 
 I will keep adding more stuff stay tuned for cooler stuff. :smiley:	 
