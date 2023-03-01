@@ -1,0 +1,44 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-content: center;
+    place-items: center;
+}
+@property --color{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: green;
+}
+div {
+    position: relative;
+    background-color: white;
+}
+
+div:before, div:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-style: solid;
+    border-width: 22px;
+    animation: infinity 4s ease forwards;
+
+}
+
+div:before {
+    rotate: 45deg;
+    --color:red;
+}
+
+div:after {
+    rotate: -135deg;
+    translate: 90px;
+    --color: gold;
+}
+@keyframes infinity {
+    100%{
+        border-color: var(--color);
+        border-radius: 50% 0% 50% 50%;
+    }
+}
