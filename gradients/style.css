@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --degree: 10deg;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.grid div{
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-size: contain;
+}
+.grid div:nth-child(1){
+    background: linear-gradient(to right, #cb1212, #7c2b2b);
+}
+.grid div:nth-child(2){
+    background: radial-gradient(circle at center,#000,#7c2b2b)
+}
+.grid div:nth-child(3){
+    background: linear-gradient(90deg,#000,#7c2b2b)
+}
+.grid div:nth-child(4){
+    background: repeating-linear-gradient(95deg, #000, #cb1212 50px)
+}
+.grid div:nth-child(5){
+    background: linear-gradient(to left, #cb1212, #7c2b2b,#000);
+}
+.grid div:nth-child(6){
+    background: linear-gradient(to left,rgba(0,0,0,.3),rgba(203,18,18,0.7))
+}
+.grid div:nth-child(7){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/backdrop.png);
+}
+.grid div:nth-child(8){
+    background: linear-gradient(45deg, #ff6666, #ffcc66 33.33%, #66cccc 66.66%, #00bfff);
+}
+.grid div:nth-child(9){
+    background: linear-gradient(to right, #ffcc66, #ff6666 50%, #66cccc);
+}
+.grid div:nth-child(10){
+    background: conic-gradient(from 130deg at center, #ff6666, #ffcc66, #66cccc);
+}
+.grid div:nth-child(11){
+    background: linear-gradient(to right, rgb(103 66 66 / 90%), rgb(223 0 0 / 70%), rgb(85 62 179 / 50%), rgb(183 43 161 / 30%), rgb(76 156 109 / 34%))
+}
+.grid div:nth-child(12){
+    background: conic-gradient( from var(--degree) at center,hsl(360, 100%, 50%),
+    hsl(315, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(225, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(135, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(45, 100%, 50%),
+    hsl(0, 100%, 50%));
+    animation: circle 1s linear infinite;
+}
+
+@keyframes circle {
+0%{
+    --degree:10deg;
+}
+    100%{
+        --degree: 360deg;
+    }
+}
